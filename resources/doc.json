@@ -1,0 +1,127 @@
+{
+  "timestamp": "2019-11-11T13:09:12",
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "1.7.4",
+    "typescriptVersion": "3.6.3"
+  },
+  "components": [
+    {
+      "filePath": "src/components/bal-button/bal-button.tsx",
+      "encapsulation": "shadow",
+      "tag": "bal-button",
+      "readme": "# Button\n\nThe classic button, in different colors, sizes, and states\n\n## Basics\n\n```html\n<bal-button type=\"is-primary\">Primary</bal-button>\n<bal-button type=\"is-info\">Info</bal-button>\n<bal-button type=\"is-success\">Success</bal-button>\n<bal-button type=\"is-warning\">Warning</bal-button>\n<bal-button type=\"is-danger\">Danger</bal-button>\n<bal-button type=\"is-link\">Link</bal-button>\n```\n\n## Outlined\n\n```html\n<bal-button type=\"is-primary is-outlined\">Primary</bal-button>\n<bal-button type=\"is-info is-outlined\">Info</bal-button>\n<bal-button type=\"is-success is-outlined\">Success</bal-button>\n<bal-button type=\"is-warning is-outlined\">Warnung</bal-button>\n<bal-button type=\"is-danger is-outlined\">Danger</bal-button>\n```\n\n## Inverted\n\n```html\n<div class=\"has-inverted-background\">\n  <bal-button type=\"is-primary is-inverted\">Primary</bal-button>\n  <bal-button type=\"is-info is-inverted\">Info</bal-button>\n  <bal-button type=\"is-info is-inverted is-outlined\">Info Outlined</bal-button>\n</div>\n```\n\n## Disabled\n\n```html\n<bal-button type=\"is-primary\" disabled>Primary</bal-button>\n<bal-button type=\"is-info\" disabled>Info</bal-button>\n<bal-button type=\"is-success\" disabled>Success</bal-button>\n<bal-button type=\"is-warning\" disabled>Warning</bal-button>\n<bal-button type=\"is-danger\" disabled>Danger</bal-button>\n<bal-button type=\"is-link\" disabled>Link</bal-button>\n```\n\n## Loading\n\n```html\n<bal-button type=\"is-primary\" loading>Primary</bal-button>\n<bal-button type=\"is-info\" loading>Info</bal-button>\n<bal-button type=\"is-success\" loading>Success</bal-button>\n<bal-button type=\"is-warning\" loading>Warning</bal-button>\n<bal-button type=\"is-danger\" loading>Danger</bal-button>\n```\n",
+      "docs": "The classic button, in different colors, sizes, and states",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "disabled",
+          "reflectToAttr": false,
+          "docs": "If `true` the button is disabled",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "loading",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "loading",
+          "reflectToAttr": false,
+          "docs": "If `true` the label is hidden and a loading spinner is shown instead.",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "type",
+          "type": "\"is-danger\" | \"is-info\" | \"is-link\" | \"is-primary\" | \"is-success\" | \"is-warning\"",
+          "mutable": false,
+          "attr": "type",
+          "reflectToAttr": false,
+          "docs": "The theme type of the button. Given by bulma our css framework.",
+          "docsTags": [],
+          "default": "\"is-primary\"",
+          "values": [
+            {
+              "value": "is-danger",
+              "type": "string"
+            },
+            {
+              "value": "is-info",
+              "type": "string"
+            },
+            {
+              "value": "is-link",
+              "type": "string"
+            },
+            {
+              "value": "is-primary",
+              "type": "string"
+            },
+            {
+              "value": "is-success",
+              "type": "string"
+            },
+            {
+              "value": "is-warning",
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "styles": [],
+      "slots": [],
+      "dependents": [],
+      "dependencies": [
+        "bal-spinner"
+      ],
+      "dependencyGraph": {
+        "bal-button": [
+          "bal-spinner"
+        ]
+      }
+    },
+    {
+      "filePath": "src/components/bal-spinner/bal-spinner.tsx",
+      "encapsulation": "shadow",
+      "tag": "bal-spinner",
+      "readme": "# Spinner\n\nA simple loading spinner.\n\n## Basic\n\n```html\n<bal-spinner></bal-spinner>\n```\n\n## Small\n\n```html\n<bal-spinner class=\"is-small\"></bal-spinner>\n```\n\n## Inverted\n\n```html\n<div class=\"has-background-info is-padded\">\n  <bal-spinner class=\"is-inverted\"></bal-spinner>\n</div>\n```\n",
+      "docs": "A simple loading spinner.",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "styles": [],
+      "slots": [],
+      "dependents": [
+        "bal-button"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "bal-button": [
+          "bal-spinner"
+        ]
+      }
+    }
+  ]
+}
