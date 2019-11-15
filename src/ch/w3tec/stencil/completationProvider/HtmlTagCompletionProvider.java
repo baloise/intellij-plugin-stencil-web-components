@@ -8,6 +8,7 @@ import com.intellij.codeInsight.completion.CompletionResultSet;
 import com.intellij.codeInsight.lookup.LookupElementBuilder;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.psi.PsiManager;
+import com.intellij.psi.PsiNamedElement;
 import com.intellij.util.ProcessingContext;
 import org.apache.xmlbeans.XmlToken;
 import org.jetbrains.annotations.NotNull;
@@ -21,19 +22,14 @@ public class HtmlTagCompletionProvider extends CompletionProvider<CompletionPara
                                   @NotNull ProcessingContext processingContext,
                                   @NotNull CompletionResultSet completionResultSet) {
 
+//        if (parameters.getPosition() instanceof XmlToken) {
+        StencilDoc stencilDoc = StencilDocReader.INSTANCE.stencilDoc;
+        stencilDoc.components
+                .forEach(stencilDocComponent -> {
+                    completionResultSet.addElement(LookupElementBuilder.create(stencilDocComponent.tag));
+                });
 
-        if (parameters.getPosition() instanceof XmlToken) {
-            try {
-                StencilDoc stencilDoc = StencilDocReader.deserialize();
-                stencilDoc.components
-                        .forEach(stencilDocComponent -> {
-                            completionResultSet.addElement(LookupElementBuilder.create(stencilDocComponent.tag));
-                        });
 
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            }
-        }
 
     }
 }

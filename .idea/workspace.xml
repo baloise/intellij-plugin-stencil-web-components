@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eedaafb2-e2c6-4b26-a74f-b4c7b32102ea" name="Default Changelist" comment="" />
+    <list default="true" id="eedaafb2-e2c6-4b26-a74f-b4c7b32102ea" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/stencil-web-components/ch/w3tec/stencil/StencilDocReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/stencil-web-components/ch/w3tec/stencil/StencilDocReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/stencil-web-components/doc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/doc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ch/w3tec/stencil/StencilDocReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/w3tec/stencil/StencilDocReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ch/w3tec/stencil/WebComponentContributor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/w3tec/stencil/WebComponentContributor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ch/w3tec/stencil/completationProvider/HtmlAttributeCompletionProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/w3tec/stencil/completationProvider/HtmlAttributeCompletionProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ch/w3tec/stencil/completationProvider/HtmlTagCompletionProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/w3tec/stencil/completationProvider/HtmlTagCompletionProvider.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +25,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -24,26 +36,33 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1TSywh374CuoIEysqZjXnO1Xgnt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/ch/w3tec/stencil/lang" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ch.w3tec.stencil" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/ch/w3tec/stencil/lang" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ch.w3tec.stencil.lang" />
+      <recent name="ch.w3tec.stencil" />
+      <recent name="ch.w3tec.stencil.metadata" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources" />
       <recent name="$PROJECT_DIR$/resources/META-INF" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="ch.w3tec.stencil" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="ch.w3tec.stencil" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -92,10 +111,25 @@
       <workItem from="1573472536718" duration="879000" />
       <workItem from="1573473802855" duration="1047000" />
       <workItem from="1573475365339" duration="52000" />
+      <workItem from="1573755476774" duration="7014000" />
+      <workItem from="1573766071559" duration="2359000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
