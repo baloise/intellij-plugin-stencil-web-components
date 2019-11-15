@@ -7,12 +7,12 @@ import java.nio.file.Path;
 public class ModulePathUtil {
 
     public static boolean isPackageJsonOfModule(Path file) {
-        return file.toAbsolutePath().toString().contains("node_modules") &&
-                file.toAbsolutePath().toString().endsWith("package.json");
+        return file.toAbsolutePath().toString().toLowerCase().contains("node_modules") &&
+                file.toAbsolutePath().toString().toLowerCase().endsWith("package.json");
     }
 
     public static boolean isJsonFile(Path file) {
-        return file.toAbsolutePath().toString().endsWith(".json");
+        return file.toAbsolutePath().toString().toLowerCase().endsWith(".json");
     }
 
     public static boolean isStencilModule(Path file) {
