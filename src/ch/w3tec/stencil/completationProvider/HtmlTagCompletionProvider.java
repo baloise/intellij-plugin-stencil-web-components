@@ -2,6 +2,7 @@ package ch.w3tec.stencil.completationProvider;
 
 import ch.w3tec.stencil.StencilDocReader;
 import ch.w3tec.stencil.dto.StencilMergedDoc;
+import ch.w3tec.stencil.util.CompletionTypeUtil;
 import com.intellij.codeInsight.completion.CompletionParameters;
 import com.intellij.codeInsight.completion.CompletionProvider;
 import com.intellij.codeInsight.completion.CompletionResultSet;
@@ -16,13 +17,14 @@ public class HtmlTagCompletionProvider extends CompletionProvider<CompletionPara
                                   @NotNull ProcessingContext processingContext,
                                   @NotNull CompletionResultSet completionResultSet) {
 
-//        if (parameters.getPosition() instanceof XmlToken) {
-        StencilMergedDoc stencilDoc = StencilDocReader.INSTANCE.stencilDoc;
-        stencilDoc.getComponents()
-                .forEach(stencilDocComponent -> {
-                    completionResultSet.addElement(LookupElementBuilder.create(stencilDocComponent.tag));
-                });
 
+        if (CompletionTypeUtil.isTag(parameters)) {
+            StencilMergedDoc stencilDoc = StencilDocReader.INSTANCE.stencilDoc;
+            stencilDoc.getComponents()
+                    .forEach(stencilDocComponent -> {
+                        completionResultSet.addElement(LookupElementBuilder.create(stencilDocComponent.tag));
+                    });
+        }
 
     }
 }

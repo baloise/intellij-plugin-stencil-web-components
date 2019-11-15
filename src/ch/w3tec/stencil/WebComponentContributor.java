@@ -15,10 +15,10 @@ public class WebComponentContributor extends CompletionContributor {
                 new HtmlTagCompletionProvider()
         );
 
-//        extend(CompletionType.BASIC,
-//                psiElement().inside(XmlPatterns.xmlAttribute()),
-//                new HtmlAttributeCompletionProvider()
-//        );
+        extend(CompletionType.BASIC,
+                psiElement().inside(XmlPatterns.xmlAttribute()),
+                new HtmlAttributeCompletionProvider()
+        );
 
     }
 }
