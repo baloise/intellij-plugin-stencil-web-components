@@ -1,4 +1,4 @@
-package ch.w3tec.stencil.dto;
+package com.baloise.open.intellijstencil.dto;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,13 +1,14 @@
-package ch.w3tec.stencil;
+package com.baloise.open.intellijstencil;
 
-import ch.w3tec.stencil.completationProvider.HtmlAttributeCompletionProvider;
-import ch.w3tec.stencil.completationProvider.HtmlTagCompletionProvider;
+import com.baloise.open.intellijstencil.completationProvider.HtmlAttributeCompletionProvider;
+import com.baloise.open.intellijstencil.completationProvider.HtmlTagCompletionProvider;
 import com.intellij.codeInsight.completion.*;
 import com.intellij.patterns.XmlPatterns;
 
 import static com.intellij.patterns.PsiJavaPatterns.psiElement;
 
 public class WebComponentContributor extends CompletionContributor {
+
     public WebComponentContributor() {
 
         extend(CompletionType.BASIC,
@@ -21,4 +22,5 @@ public class WebComponentContributor extends CompletionContributor {
         );
 
     }
+
 }

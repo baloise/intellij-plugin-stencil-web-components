@@ -1,7 +1,7 @@
-package ch.w3tec.stencil.completationProvider;
+package com.baloise.open.intellijstencil.completationProvider;
 
-import ch.w3tec.stencil.StencilDocReader;
-import ch.w3tec.stencil.dto.StencilMergedDoc;
+import com.baloise.open.intellijstencil.StencilDocReader;
+import com.baloise.open.intellijstencil.dto.StencilMergedDoc;
 import com.intellij.codeInsight.completion.CompletionParameters;
 import com.intellij.codeInsight.completion.CompletionProvider;
 import com.intellij.codeInsight.completion.CompletionResultSet;
@@ -13,8 +13,6 @@ import com.intellij.psi.impl.source.xml.XmlAttributeReference;
 import com.intellij.psi.xml.XmlAttributeValue;
 import com.intellij.util.ProcessingContext;
 import org.jetbrains.annotations.NotNull;
-
-import static ch.w3tec.stencil.completationProvider.IconUtil.addIcon;
 
 public class HtmlAttributeCompletionProvider extends CompletionProvider<CompletionParameters> {
 
@@ -33,7 +31,7 @@ public class HtmlAttributeCompletionProvider extends CompletionProvider<Completi
                         stencilDocComponent.props
                                 .forEach(stencilDocComponentProp -> {
                                     LookupElementBuilder lookupElement = LookupElementBuilder.create(stencilDocComponentProp.name);
-                                    completionResultSet.addElement(addIcon(lookupElement));
+                                    completionResultSet.addElement(IconUtil.addIcon(lookupElement));
                                 });
                     });
         } else {
@@ -50,7 +48,7 @@ public class HtmlAttributeCompletionProvider extends CompletionProvider<Completi
                                                 .filter(stencilDocComponentPropsValues -> stencilDocComponentPropsValues.value != null)
                                                 .forEach(stencilDocComponentPropsValues -> {
                                                     LookupElementBuilder lookupElement = LookupElementBuilder.create(stencilDocComponentPropsValues.value);
-                                                    completionResultSet.addElement(addIcon(lookupElement));
+                                                    completionResultSet.addElement(IconUtil.addIcon(lookupElement));
                                                 });
                                     });
                         });
