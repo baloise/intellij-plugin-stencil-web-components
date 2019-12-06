@@ -1,4 +1,4 @@
-package ch.w3tec.stencil.util;
+package com.baloise.open.intellijstencil.util;
 
 import com.intellij.codeInsight.completion.CompletionParameters;
 import com.intellij.psi.PsiElement;

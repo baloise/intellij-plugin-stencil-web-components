@@ -1,18 +1,14 @@
-package ch.w3tec.stencil.completationProvider;
+package com.baloise.open.intellijstencil.completationProvider;
 
-import ch.w3tec.stencil.StencilDocReader;
-import ch.w3tec.stencil.dto.StencilMergedDoc;
-import ch.w3tec.stencil.util.CompletionTypeUtil;
+import com.baloise.open.intellijstencil.StencilDocReader;
+import com.baloise.open.intellijstencil.dto.StencilMergedDoc;
+import com.baloise.open.intellijstencil.util.CompletionTypeUtil;
 import com.intellij.codeInsight.completion.CompletionParameters;
 import com.intellij.codeInsight.completion.CompletionProvider;
 import com.intellij.codeInsight.completion.CompletionResultSet;
 import com.intellij.codeInsight.lookup.LookupElementBuilder;
 import com.intellij.util.ProcessingContext;
 import org.jetbrains.annotations.NotNull;
-
-import javax.swing.*;
-
-import static ch.w3tec.stencil.completationProvider.IconUtil.addIcon;
 
 public class HtmlTagCompletionProvider extends CompletionProvider<CompletionParameters> {
 
@@ -27,7 +23,7 @@ public class HtmlTagCompletionProvider extends CompletionProvider<CompletionPara
             stencilDoc.getComponents()
                     .forEach(stencilDocComponent -> {
                         LookupElementBuilder lookupElement = LookupElementBuilder.create(stencilDocComponent.tag);
-                        completionResultSet.addElement(addIcon(lookupElement));
+                        completionResultSet.addElement(IconUtil.addIcon(lookupElement));
                     });
         }
 

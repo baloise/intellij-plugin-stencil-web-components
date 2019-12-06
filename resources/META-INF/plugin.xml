@@ -1,5 +1,5 @@
 <idea-plugin>
-    <id>ch.w3tec.stencil.WebComponentContributor</id>
+    <id>com.baloise.open.intellijstencil.WebComponentContributor</id>
     <name>StencilJS Web Components</name>
     <version>1.0</version>
     <vendor email="gery.hirschfeld@w3tec.ch" url="http://www.w3tec.ch">w3tec</vendor>
@@ -23,7 +23,7 @@
     <depends>com.intellij.modules.json</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <completion.contributor language="HTML" implementationClass="ch.w3tec.stencil.WebComponentContributor"/>
+        <completion.contributor language="HTML" implementationClass="com.baloise.open.intellijstencil.WebComponentContributor"/>
     </extensions>
 
     <actions>

@@ -1,4 +1,4 @@
-package ch.w3tec.stencil.dto;
+package com.baloise.open.intellijstencil.dto;
 
 public class StencilDocComponentPropsValues {
     public String value;

@@ -1,4 +1,4 @@
-package ch.w3tec.stencil.util;
+package com.baloise.open.intellijstencil.util;
 
 import java.io.IOException;
 import java.nio.file.Files;

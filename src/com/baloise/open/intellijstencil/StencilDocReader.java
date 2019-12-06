@@ -1,8 +1,8 @@
-package ch.w3tec.stencil;
+package com.baloise.open.intellijstencil;
 
-import ch.w3tec.stencil.dto.StencilDoc;
-import ch.w3tec.stencil.dto.StencilMergedDoc;
-import ch.w3tec.stencil.util.ModulePathUtil;
+import com.baloise.open.intellijstencil.dto.StencilDoc;
+import com.baloise.open.intellijstencil.dto.StencilMergedDoc;
+import com.baloise.open.intellijstencil.util.ModulePathUtil;
 import com.google.gson.Gson;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.project.ProjectManager;
@@ -42,8 +42,7 @@ public class StencilDocReader {
 
                 return Optional.of(mergedDoc);
             } catch (Exception e) {
-                // TODO error handling
-                return Optional.empty();
+                throw new RuntimeException(e);
             }
         }
 

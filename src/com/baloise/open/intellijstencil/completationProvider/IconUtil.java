@@ -1,4 +1,4 @@
-package ch.w3tec.stencil.completationProvider;
+package com.baloise.open.intellijstencil.completationProvider;
 
 import com.intellij.codeInsight.lookup.LookupElementBuilder;
 

@@ -3,7 +3,7 @@
 ## About
 
 Support for StencilJS component library projects.
-It scans for `docs.json` files to learn the stencil components and their attributes.
+It scans for Stencil JSON files in your project's node_modules to learn the stencil components and their attributes.
 
 ## Development
 
