@@ -14,6 +14,8 @@ import com.intellij.psi.xml.XmlAttributeValue;
 import com.intellij.util.ProcessingContext;
 import org.jetbrains.annotations.NotNull;
 
+import static ch.w3tec.stencil.completationProvider.IconUtil.addIcon;
+
 public class HtmlAttributeCompletionProvider extends CompletionProvider<CompletionParameters> {
 
     @Override
@@ -30,7 +32,8 @@ public class HtmlAttributeCompletionProvider extends CompletionProvider<Completi
                     .forEach(stencilDocComponent -> {
                         stencilDocComponent.props
                                 .forEach(stencilDocComponentProp -> {
-                                    completionResultSet.addElement(LookupElementBuilder.create(stencilDocComponentProp.name));
+                                    LookupElementBuilder lookupElement = LookupElementBuilder.create(stencilDocComponentProp.name);
+                                    completionResultSet.addElement(addIcon(lookupElement));
                                 });
                     });
         } else {
@@ -46,8 +49,8 @@ public class HtmlAttributeCompletionProvider extends CompletionProvider<Completi
                                         stencilDocComponentProp.values.stream()
                                                 .filter(stencilDocComponentPropsValues -> stencilDocComponentPropsValues.value != null)
                                                 .forEach(stencilDocComponentPropsValues -> {
-                                                    completionResultSet.addElement(LookupElementBuilder.create(stencilDocComponentPropsValues.value));
-
+                                                    LookupElementBuilder lookupElement = LookupElementBuilder.create(stencilDocComponentPropsValues.value);
+                                                    completionResultSet.addElement(addIcon(lookupElement));
                                                 });
                                     });
                         });
