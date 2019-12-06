@@ -10,6 +10,10 @@ import com.intellij.codeInsight.lookup.LookupElementBuilder;
 import com.intellij.util.ProcessingContext;
 import org.jetbrains.annotations.NotNull;
 
+import javax.swing.*;
+
+import static ch.w3tec.stencil.completationProvider.IconUtil.addIcon;
+
 public class HtmlTagCompletionProvider extends CompletionProvider<CompletionParameters> {
 
     @Override
@@ -22,7 +26,8 @@ public class HtmlTagCompletionProvider extends CompletionProvider<CompletionPara
             StencilMergedDoc stencilDoc = StencilDocReader.INSTANCE.stencilDoc;
             stencilDoc.getComponents()
                     .forEach(stencilDocComponent -> {
-                        completionResultSet.addElement(LookupElementBuilder.create(stencilDocComponent.tag));
+                        LookupElementBuilder lookupElement = LookupElementBuilder.create(stencilDocComponent.tag);
+                        completionResultSet.addElement(addIcon(lookupElement));
                     });
         }
 
